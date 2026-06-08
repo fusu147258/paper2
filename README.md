@@ -15,13 +15,13 @@ run train_ours.py to train backdoor model
 python train_ours.py
 
 防御方法
-# 运行Fine-Pruning防御
+/fp/
 python defense_FP.py --dataset <datasetName>  --outfile <outputFile>
-# 运行Neural Cleanse防御
+/nc/
 python defense_NC.py --dataset <datasetName> 
-# 运行STRIP防御
+/strip/
 python defense_STRIP.py --dataset <datasetName> 
-# 运行GradCAM检测
+/gradcam/
 python defense_gradcam.py --dataset <datasetName> --target_class <classId>
-# 运行FTD防御
+/ftd/
 python defense_FTD.py --dataset <datasetName>
