@@ -15,13 +15,19 @@ run train_ours.py to train backdoor model
 python train_ours.py
 
 防御方法
+
 /fp/
 python defense_FP.py --dataset <datasetName>  --outfile <outputFile>
+
 /nc/
 python defense_NC.py --dataset <datasetName> 
+
 /strip/
 python defense_STRIP.py --dataset <datasetName> 
+
 /gradcam/
 python defense_gradcam.py --dataset <datasetName> --target_class <classId>
+
 /ftd/
 python defense_FTD.py --dataset <datasetName>
+
