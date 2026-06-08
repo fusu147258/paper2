@@ -1,19 +1,22 @@
 
 ## Code Architecture
 
-    ├── checkpoint        # Saved models
-    ├── data              # Dataset folder
-    ├── models            # Model architectures
-    │   ├── resnet.py     # ResNet models
-    │   └── vgg.py        # VGG models
-    ├── dataset.py        # Dataset processing function
-    ├── main.py           # Main function
-    ├── partition.py      # (Implicit) partioning function
-    ├── dpso.py           # optimization algorithm
-    ├── train.py          # Training function
-    ├── trigger_**.py     # Trigger function for various ablation experiment
-    ├── trigger_wshape_all2.py   # Trigger function 
-    └── utils.py          # Utility functions
+    ├── AVEA.py                 # 主攻击程序
+    ├── GradCAM.py              # GradCAM可视化工具
+    ├── cancha.py               # 辅助检测模块
+    ├── data_process.py         # 数据处理工具
+    ├── dct.py                  # DCT变换核心模块
+    ├── dp.py                   # 动态位置选择模块
+    ├── train_ours.py           # 模型训练脚本
+    ├── networks/               # 网络结构定义
+    ├── bd/result/              # 后门攻击结果保存
+    ├── cancha/                 # 检测结果保存
+    ├── clean/                  # 干净样本保存
+    ├── dct_steps/              # DCT处理步骤可视化
+    ├── defense/                # 防御方法代码
+    ├── .gitignore              # Git忽略文件
+    ├── README.md               # 项目说明
+    └── Readme.txt              # 简要说明
 ```
 
 
